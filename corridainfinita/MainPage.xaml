@@ -3,6 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="corridainfinita.MainPage">
 
+   <Grid>
+  <HorizontalStackLayout x:Name="hslayer1">
+   <Image Source="ceu.jpg"/>
+   <Image Source="ceu.jpg"/>
+   <Image Source="ceu.jpg"/>
+  </HorizontalStackLayout>
+
+  <HorizontalStackLayout x:Name="hslayer2">
+   <Image Source="fundo.jpg"/>
+   <Image Source="fundo.jpg"/>
+   <Image Source="fundo.jpg"/>
+   </HorizontalStackLayout>
+
+   <HorizontalStackLayout x:Name="hslayer3">
+    <Image Source="meio.png"/>
+    <Image Source="meio.png"/>
+    <Image Source="meio.png"/>
+   </HorizontalStackLayout>
+
+   <HorizontalStackLayout x:Name="hslayer4">
+    <Image Source="frente.png"/>
+    <Image Source="frente.png"/>
+    <Image Source="frente.png"/>
+   </HorizontalStackLayout>
+
+   <HorizontalStackLayout x:Name="hslayer5">
+    <Image Source="chao.png"/>
+    <Image Source="chao.png"/>
+    <Image Source="chao.png"/>
+   </HorizontalStackLayout>
+
+
+
+
+
    
+
+
+
+
+   
+   
+   </Grid>
 
 </ContentPage>
