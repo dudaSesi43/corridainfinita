@@ -5,9 +5,13 @@
 
    <Grid>
   <HorizontalStackLayout x:Name="hslayer1">
-   <Image Source="ceu.jpg"/>
-   <Image Source="ceu.jpg"/>
-   <Image Source="ceu.jpg"/>
+   
+   <Image Source="ceu.jpg"
+         Aspect = "Fill"/>
+   <Image Source="ceu.jpg"
+         Aspect = "Fill"/>
+   <Image Source="ceu.jpg"
+         Aspect = "Fill"/>
   </HorizontalStackLayout>
 
   <HorizontalStackLayout x:Name="hslayer2">
@@ -28,23 +32,28 @@
     <Image Source="frente.png"/>
    </HorizontalStackLayout>
 
-   <HorizontalStackLayout x:Name="hslayer5">
-    <Image Source="chao.png"/>
-    <Image Source="chao.png"/>
-    <Image Source="chao.png"/>
-   </HorizontalStackLayout>
-
-
-
-
-
-   
-
-
-
-
-   
-   
-   </Grid>
+   <HorizontalStackLayout x:Name="hslayerChao">
+    <Image Source="chao.png"
+            VerticalOptions="End"/>
+    <Image Source="chao.png"
+            VerticalOptions="End"/>
+    <Image Source="chao.png"
+            VerticalOptions="End"/>
+    </HorizontalStackLayout>
+    </Grid>
 
 </ContentPage>
+
+
+
+
+
+   
+
+
+
+
+   
+   
+
+
