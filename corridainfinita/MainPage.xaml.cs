@@ -1,4 +1,6 @@
-﻿namespace corridainfinita;
+﻿using FFImageLoading.Maui;
+namespace corridainfinita;
+
 
 public partial class MainPage : ContentPage
 {
@@ -72,5 +74,52 @@ public partial class MainPage : ContentPage
 		hslayerChao.WidthRequest=w*1.5;
 	}
 	
+	
+
+
+	async Task Desenha()
+	{
+		while (!estaMorto)
+		{
+			GerenciaCenarios();
+			player.Desenhar();
+			await Task.Delay(tempoEntreFrame);
+
+		}
+	}
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+		Desenha();
+    }
+	
+	void AplicaGravidade()
+	{
+		if (player.GetY()<0)
+		player.MoveY (forcaGravidade);
+		else if (player.GetY()>=0)
+		{
+			player.SetY (0);
+			estaChao=true;
+		}
+	}
+	void AplicaPulo()
+	{
+		estaChao=false;
+		if (estaPulando && tempoPulando >= maxTempoPulando)
+		{
+			estaPulando = false;
+			estaAr = true;
+			tempoAr=0;
+		}
+		else if (estaAr && tempoAr >= maxTempoAr)
+		{
+			estaPulando=false;
+			estaAr=false;
+			tempoPulando=0;
+			tempoAr=0;
+		}
+	}
+
 }
 
